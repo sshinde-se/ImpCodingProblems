@@ -25,14 +25,14 @@ public class MinCostClimbingStairs {
          }
     public static int minCostClimbingStairsUsingFineTuning(int[] cost) {
         int n = cost.length;
-        int first=cost[0];
-        int second=cost[1];
+        int second=cost[0];
+        int first=cost[1];
         if(n<=2)
             return Math.min(first,second);
         for(int i=2;i<n;i++){
             int curr = cost[i] + Math.min(first, second);
-            first = second;
-            second = curr;
+            second = first;
+            first = curr;
         }
         return Math.min(first, second);
     }

@@ -11,14 +11,21 @@ public class StringToInteger {
     }
 
     private static int atoi(String a) {
-        if(a.isEmpty())
-            return -1;
+        String s = a.trim();
+        if(s.isEmpty())
+            return 0;
         int j=0, res=0;
-        if(a.charAt(0) == '-')
+        if(s.charAt(0) == '-')
             j = 1;
-        for(int i=j; i<a.length(); i++){
-            if(Character.isDigit(a.charAt(i)))
-                res = res * 10 + (a.charAt(i) - '0');
+        for(int i=j; i<s.length(); i++){
+            if(Character.isDigit(s.charAt(i)))
+            {
+                if (res > (Integer.MAX_VALUE / 10) || (res == (Integer.MAX_VALUE / 10) && (s.charAt(i) - '0') > 7)){
+                    return j==1 ? Integer.MIN_VALUE : Integer.MAX_VALUE;
+                }
+                res = res * 10 + (s.charAt(i) - '0');
+            }
+
         }
         if(j==1)
             return res * -1;

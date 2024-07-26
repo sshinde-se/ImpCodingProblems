@@ -1,4 +1,4 @@
-package DynamicProgramming.Medium.OneD;
+package DynamicProgramming.Easy;
 
 import java.util.HashMap;
 import java.util.Map;
