@@ -8,13 +8,13 @@ public class InsertDeleteAtEnd {
         insertAtEnd(3);
         insertAtEnd(4);
         printNodes();
-        deleteFromBeg();
+        deleteFromEnd();
         printNodes();
-        deleteFromBeg();
+        deleteFromEnd();
         printNodes();
-        deleteFromBeg();
+        deleteFromEnd();
         printNodes();
-        deleteFromBeg();
+        deleteFromEnd();
         printNodes();
     }
     private static void insertAtEnd(int data){
@@ -32,7 +32,7 @@ public class InsertDeleteAtEnd {
         curr.next = newNode;
 
     }
-    private static void deleteFromBeg(){
+    private static void deleteFromEnd(){
         if(head==null)
             return;
         if(head.next==head){

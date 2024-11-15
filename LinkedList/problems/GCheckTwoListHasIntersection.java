@@ -59,6 +59,16 @@ public class GCheckTwoListHasIntersection {
         }
         return false;
     }
+    //Solution 4: Create two stacks: one for the first list and one for the second list.
+    //Traverse the first list and push all the node addresses onto the first stack.
+    //Traverse the second list and push all the node addresses onto the second stack.
+    //Now both stacks contain the node address of the corresponding lists.
+    //Now compare the top node address of both stacks.
+
+    //Solution 5: Create an array A and keep all the next pointers of both the lists in the array.
+    //In the array find the first repeating element.
+    //The first repeating number indicates the merging point of both the lists
+
     public static void main(String[] args){
         head = new Node(1);
         head.next = new Node(2);

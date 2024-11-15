@@ -14,6 +14,11 @@ a.b.c.Class Test {
 which variable is accessible from a.b.c.Test to x.y.z.SubClassTest
 a.b.c SubclassTest extends Test
 
+Here answer-> before checking member visibility we have to check class visibility
+so if class is public and method in it is also public then we can access it in diff package i.e x.y.z
+
+If a member declared as the protected then we can access that member within the current package
+anywhere but outside package(with class as public) only in child classes. Protected=default+kids.
 
 which variable is accessible from a.b.c.Test to a.b.c.SubClassTest
 a.b.c SubclassTest

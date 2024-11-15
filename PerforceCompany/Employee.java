@@ -69,6 +69,10 @@ public class Employee {
         list.add(new Employee(102, "ABC", "QA", 40000.0));
         list.add(new Employee(103, "PQR", "Dev", 50000.0));
         list.add(new Employee(104, "XYZ", "QA", 40000.0));
+        list.add(null);
+        ArrayList a = new ArrayList<>();
+        a.add(10);
+        a.add("sss");
         groupByJobTitle(list);
 
     }

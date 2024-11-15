@@ -22,14 +22,14 @@ public class AClimbingStairs {
     }
 
     private static int climbStairs(int n) {
-        int one=1;
-        int two = 1;
-        for(int i=0;i<n-1;i++){
-            int tmp = one;
-            one = one + two;
-            two = tmp;
+        int prev2 = 1;
+        int prev = 1;
+        for(int i=2;i<=n;i++){
+            int curri = prev2 + prev;
+            prev2 = prev;
+            prev = curri;
         }
-        return one;
+        return prev;
     }
     private static int climbStairsUsingHashMap(int n, Map<Integer, Integer> memo) {
         if(n==0 || n==1)

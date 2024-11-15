@@ -26,7 +26,7 @@ be called for (N x M) nodes and for every node we are traversing for 4 neighbour
 Space Complexity: O(N x M) + O(N x M)
 O(N x M) for copied input array and recursive stack space takes up N x M locations at max.
  */
-public class FloodFill {
+public class CFloodFill {
     public static void main(String[] args)
     {
         int[][] image =  {{1,1,1},

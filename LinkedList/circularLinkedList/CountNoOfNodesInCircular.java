@@ -16,7 +16,7 @@ public class CountNoOfNodesInCircular {
         else{
             int count=0;
             Node curr=head;
-            do{
+            do{   //here head should get counted that's why we used do while loop
                 count++;
                 curr=curr.next;
             }while (curr!=head);

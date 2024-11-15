@@ -22,7 +22,7 @@ Space Complexity: O(3N) ~ O(N), Space for dfs stack space, visited array and an 
 
           0                         0 => {1,4}
          / \                        1 => {0,2,3}
-        1   4   => 0 1 4 2 3        2 => {1}
+        1   4   => 0 1 2 3 4        2 => {1}
        / \                          3 => {1}
       2   3                         4 => {0}
  */

@@ -19,7 +19,7 @@ public class FReverseLinkedList {
         System.out.println("Reversing node:");
         printNodes();
     }
-
+    //https://www.geeksforgeeks.org/reverse-a-linked-list/
     private static Node reverseList() {
         if(head == null){
             return null;

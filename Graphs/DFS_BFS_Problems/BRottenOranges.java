@@ -20,7 +20,7 @@ Space Complexity: O ( n x n )
 Reason: worst-case -  If all oranges are Rotten, we will end up pushing all rotten oranges into
 the Queue data structure
  */
-public class RottenOranges {
+public class BRottenOranges {
     public static void main(String[] args){
         int[][] arr ={ {2,1,1} , {1,1,0} , {0,1,1} };
         int rotting = orangesRotting(arr);

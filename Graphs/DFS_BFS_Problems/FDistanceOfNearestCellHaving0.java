@@ -5,7 +5,7 @@ import java.util.Queue;
 
 /*
 Problem Statement: Given a binary grid of N*M.
-Find the distance of the nearest 1 in the grid for each cell.
+Find the distance of the nearest 0 in the grid for each cell.
 https://www.youtube.com/watch?v=edXdVwkYHF8&t=1202s
 
 Input:
@@ -18,7 +18,7 @@ Output:
 [0,1,0]
 [1,2,1]
  */
-public class DistanceOfNearestCellHaving0 {
+public class FDistanceOfNearestCellHaving0 {
     public static void main(String[] args)
     {
         int[][] grid = {{0,0,0},

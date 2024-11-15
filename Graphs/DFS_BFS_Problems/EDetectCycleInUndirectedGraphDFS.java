@@ -1,8 +1,6 @@
 package Graphs.DFS_BFS_Problems;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Queue;
 
 /*
 Input:
@@ -17,7 +15,7 @@ Time Complexity: O(N + 2E) + O(N), Where N = Nodes, 2E is for total degrees as w
 
 Space Complexity: O(N) + O(N) ~ O(N), Space for recursive stack space and visited array.
  */
-public class DetectCycleInUndirectedGraphDFS {
+public class EDetectCycleInUndirectedGraphDFS {
     public static void main(String[] args){
         ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
         for (int i = 0; i < 4; i++) {

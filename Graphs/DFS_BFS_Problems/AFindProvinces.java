@@ -15,7 +15,7 @@ Return the total number of provinces
 
   In above ex 1 and 2 are connected so it is one province and 3 is another province hence count is 2.
  */
-public class FindProvinces {
+public class AFindProvinces {
     public static void main(String[] args){
         int[][] isConnected = {{1,1,0},
                                {1,1,0},

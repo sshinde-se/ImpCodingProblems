@@ -46,7 +46,7 @@ public class SZigZagTraversalOfBinaryTree {
             list.add(l1);
         }
         for(int i=0;i<list.size();i++){
-            if(!(i%2==0)){
+            if(i%2!=0){
                 Collections.reverse(list.get(i));
             }
         }

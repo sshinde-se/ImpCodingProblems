@@ -3,6 +3,7 @@ package Pubmatic;
 import java.util.*;
 
 public class SortArrayWithDigitSum {
+
     public static void main(String []args)
     {
         List<Integer> l = new ArrayList<>(Arrays.asList(4,9,43,401,45,101,401));

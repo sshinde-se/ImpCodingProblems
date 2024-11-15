@@ -16,7 +16,7 @@ Time Complexity: O(N + 2E) + O(N), Where N = Nodes, 2E is for total degrees as w
 
 Space Complexity: O(N) + O(N) ~ O(N), Space for queue data structure and visited array.
  */
-public class DetectCycleInUndirectedGraphBFS {
+public class DDetectCycleInUndirectedGraphBFS {
     public static void main(String[] args){
         ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
         for (int i = 0; i < 4; i++) {
@@ -26,6 +26,7 @@ public class DetectCycleInUndirectedGraphBFS {
         adj.get(2).add(1);
         adj.get(2).add(3);
         adj.get(3).add(2);
+        adj.get(3).add(1);
 
         System.out.println("Is cycle: "+ isCycle(4, adj));
 
