@@ -47,8 +47,7 @@ public class Z3TopViewOfBinaryTree {
             Pair pair = queue.poll();
             int hd = pair.hd;
             Node tmp = pair.next;
-            if(map.get(hd) == null)
-                map.put(hd, tmp.data);
+            map.computeIfAbsent(hd, k -> tmp.data);
             if(tmp.left!=null){
                 queue.add(new Pair(tmp.left, hd-1));
             }
